@@ -1,11 +1,11 @@
 require('dotenv').config()
 const express = require("express");
-const dbConnection = require("./config/bdConnection");
+const dbConnection = require('./config/bdConnection');
 const app = express();
 
-app.use(express.json());
 
-dbConnection
+app.use(express.json());
+dbConnection()
 
 
 
